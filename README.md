@@ -120,8 +120,10 @@ pip install -r requirements.txt
 
 # Copy environment file and fill in values
 cp .env.example .env
-```
 
+cd d:\nariniti\backend
+python manage.py runserver
+```
 Edit `.env`:
 
 ```
@@ -159,6 +161,9 @@ npm install
 
 # Copy environment file
 cp .env.example .env.local
+
+cd d:\nariniti\frontend
+npm run dev
 ```
 
 Edit `.env.local`:
@@ -253,6 +258,9 @@ The frontend will be available at **http://localhost:3000**.
 ```bash
 cd backend
 python manage.py test authentication profile_api --verbosity=2
+
+cd d:\nariniti\backend
+python manage.py runserver
 ```
 
 Tests cover:
@@ -269,6 +277,9 @@ Tests cover:
 ```bash
 cd frontend
 npm run build    # type-check and build
+
+cd d:\nariniti\frontend
+npm run dev
 ```
 
 ---
